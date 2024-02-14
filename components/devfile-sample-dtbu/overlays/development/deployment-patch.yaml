@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dtbu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0062-tenant/tkwch-fix-0075-0062-app/devfile-sample-dtbu@sha256:1fce72bc30a1d1bffdb99e9d5593969e830b49ed7e8971edb7efb05ed454bd33
+        name: my-nodejs
+        resources: {}
+status: {}
